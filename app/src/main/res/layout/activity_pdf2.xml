@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ConstraintLayout_pdf2"
+    android:theme="@android:style/Theme.NoDisplay"
+    tools:context=".NuevaFicha">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_pdf2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titulo_1_componente_pdf2"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="Componente"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/titulo_1_nombre_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#005C5656"
+                    android:backgroundTint="#005A5454"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Nombre del producto"
+                    android:inputType="textPersonName"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/nombre_1_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Introduce el nombre del preparado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/titulo_1_proveedor_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#005C5656"
+                    android:backgroundTint="#005A5454"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Proveedor del producto"
+                    android:inputType="textPersonName"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/proveedor_1_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Introduce el proveedor del preparado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/titulo_1_lote_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#005C5656"
+                    android:backgroundTint="#005A5454"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Lote del producto"
+                    android:inputType="textPersonName"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/lote_1_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Introduce el lote del producto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/titulo_1_kg_pdf2"
+                    android:layout_width="450dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#005C5656"
+                    android:backgroundTint="#005A5454"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Kg Producto"
+                    android:inputType="textPersonName"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/kg_1_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Kg Producto"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_1_pdf2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/titulo_2_componente_pdf2"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="Componente"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/titulo_2_nombre_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#005C5656"
+                    android:backgroundTint="#005A5454"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Nombre del producto"
+                    android:inputType="textPersonName"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/nombre_2_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Introduce el nombre del preparado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/titulo_2_proveedor_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#005C5656"
+                    android:backgroundTint="#005A5454"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Proveedor del producto"
+                    android:inputType="textPersonName"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/proveedor_2_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Introduce el proveedor del preparado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/titulo_2_lote_pdf2o"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#005C5656"
+                    android:backgroundTint="#005A5454"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Lote del producto"
+                    android:inputType="textPersonName"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/lote_2_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Introduce el lote del producto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/titulo_2_kg_pdf2"
+                    android:layout_width="450dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#005C5656"
+                    android:backgroundTint="#005A5454"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Kg Producto"
+                    android:inputType="textPersonName"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/kg_2_pdf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Kg Producto"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_2_pdf2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/timestamp_pdf2"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:text="Timestamp de generación del PDF" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

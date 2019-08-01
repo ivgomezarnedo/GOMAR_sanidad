@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ConstraintLayout_lf"
+    tools:context=".Lista_Fichas">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_lista_fichas"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_lista_fichas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_lista_fichas"
+        app:layout_constraintVertical_bias="0.0">
+
+        <AutoCompleteTextView
+            android:id="@+id/TVNombrePrep_lf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce el nombre del preparado" />
+
+        <EditText
+            android:id="@+id/TVLote_lf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Lote de Producto"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText11_lf"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#005C5656"
+                android:backgroundTint="#005A5454"
+                android:clickable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Fecha elaboración"
+                android:inputType="textPersonName"
+                android:textIsSelectable="false"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/SeleccionarCampos_lf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Fecha elaboración"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/TVKg_lf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Kg Producto"
+            android:inputType="numberDecimal" />
+
+        <View
+            android:id="@+id/divider3_lf"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_margin="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText3_lf"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00665F5F"
+                android:backgroundTint="#00575454"
+                android:clickable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Fecha consumo preferente"
+                android:inputType="textPersonName"
+                android:shadowColor="#00534E4E"
+                android:textColor="#000E0C0C"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/TVFechaConsum_lf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Fecha consumo"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2_lf"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="?android:attr/listDivider" />
+
+        <View
+            android:id="@+id/divider4_lf"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="?android:attr/listDivider" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="377dp">
+
+            <LinearLayout
+                android:id="@+id/layout_componentes_lf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

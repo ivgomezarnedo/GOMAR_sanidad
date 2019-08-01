@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/back_list"
+        android:title="ElementoAnterior"
+        android:tooltipText="Ficha anterior"
+        android:icon="@drawable/back_list"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/forward_list"
+        android:title="ElementoPosterior"
+        android:tooltipText="Ficha posterior"
+        android:icon="@drawable/forward_list"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/delete_list"
+        android:title="Elimina la Ficha"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/exportar1"
+        android:title="Exportar ficha a PDF"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/exportarTodo"
+        android:title="Exportar todo"
+        app:showAsAction="never"/>
+
+</menu>
