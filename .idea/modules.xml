@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Gomar Sanidad.iml" filepath="$PROJECT_DIR$/Gomar Sanidad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GOMAR_sanidad.iml" filepath="$PROJECT_DIR$/GOMAR_sanidad.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

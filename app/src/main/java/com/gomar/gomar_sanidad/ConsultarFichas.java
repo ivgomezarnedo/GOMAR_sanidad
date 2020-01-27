@@ -35,13 +35,6 @@ import java.util.regex.Pattern;
  * This class also implements mechanisms to avoid exceptions or errors due to bad values typed by the user.
  */
 
-//Para que si la aplicación falla se mande un correo electrónico a esa dirección con la información del error.
-
-@ReportsCrashes(mailTo = "ivangomezarnedo@gmail.com", customReportContent = {
-        ReportField.APP_VERSION_CODE, ReportField.APP_VERSION_NAME,
-        ReportField.ANDROID_VERSION, ReportField.PHONE_MODEL,
-        ReportField.CUSTOM_DATA, ReportField.STACK_TRACE, ReportField.LOGCAT},
-        mode = ReportingInteractionMode.TOAST)
 public class ConsultarFichas extends AppCompatActivity {
     /**
      * The Sgbd. An instance of SQL Class in order to be able to communicate with the DB.

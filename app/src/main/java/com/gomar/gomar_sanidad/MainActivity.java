@@ -3,22 +3,15 @@ package com.gomar.gomar_sanidad;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import org.acra.ReportField;
-import org.acra.ReportingInteractionMode;
-import org.acra.annotation.ReportsCrashes;
 
 
 
 /**
  * The type Main activity.
  */
-@ReportsCrashes(mailTo = "ivangomezarnedo@gmail.com", customReportContent = {
-        ReportField.APP_VERSION_CODE, ReportField.APP_VERSION_NAME,
-        ReportField.ANDROID_VERSION, ReportField.PHONE_MODEL,
-        ReportField.CUSTOM_DATA, ReportField.STACK_TRACE, ReportField.LOGCAT},
-        mode = ReportingInteractionMode.TOAST)
 public class MainActivity extends AppCompatActivity {
     /**
      * The constant EXTRA_MESSAGE.

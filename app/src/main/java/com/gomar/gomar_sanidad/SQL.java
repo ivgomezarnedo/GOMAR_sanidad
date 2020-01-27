@@ -17,12 +17,6 @@ import java.util.HashMap;
  * In this class is defined all the functionality to create and allow interaction with the DB.
  */
 
-//Para que si la aplicación falla se mande un correo electrónico a esa dirección con la información del error.
-@ReportsCrashes(mailTo = "ivangomezarnedo@gmail.com", customReportContent = {
-        ReportField.APP_VERSION_CODE, ReportField.APP_VERSION_NAME,
-        ReportField.ANDROID_VERSION, ReportField.PHONE_MODEL,
-        ReportField.CUSTOM_DATA, ReportField.STACK_TRACE, ReportField.LOGCAT},
-        mode = ReportingInteractionMode.TOAST)
 public class SQL extends SQLiteOpenHelper {
 
     /**

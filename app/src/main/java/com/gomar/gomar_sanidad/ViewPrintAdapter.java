@@ -15,11 +15,6 @@ import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import org.acra.ReportField;
-import org.acra.ReportingInteractionMode;
-import org.acra.annotation.ReportsCrashes;
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -30,11 +25,6 @@ import java.util.TimeZone;
 /**
  * This class handle the functionality to return a PDF file with the information of one or several Fichas
  */
-@ReportsCrashes(mailTo = "ivangomezarnedo@gmail.com", customReportContent = {
-        ReportField.APP_VERSION_CODE, ReportField.APP_VERSION_NAME,
-        ReportField.ANDROID_VERSION, ReportField.PHONE_MODEL,
-        ReportField.CUSTOM_DATA, ReportField.STACK_TRACE, ReportField.LOGCAT},
-        mode = ReportingInteractionMode.TOAST)
 public class ViewPrintAdapter extends PrintDocumentAdapter {
 
     /**
