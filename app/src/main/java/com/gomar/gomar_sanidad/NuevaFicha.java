@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -288,6 +289,7 @@ public class NuevaFicha extends AppCompatActivity {
         auto_lote.setHint("Introduce el lote del componente "+componentes);
         AutoCompleteTextView auto_peso = new AutoCompleteTextView(this);
         auto_peso.setTag("Peso"+componentes);
+        auto_peso.setInputType(InputType.TYPE_CLASS_NUMBER);
         auto_peso.setHint("Introduce el peso del componente "+componentes);
 
         textViewComp.setLayoutParams(LayoutParamsview);
@@ -392,7 +394,7 @@ public class NuevaFicha extends AppCompatActivity {
             Toast.makeText(this, "Introduce un NOMBRE para el preparado", Toast.LENGTH_SHORT).show();
             return false;
         } else if (!ComprobarFormatoLote(TVLote.getText().toString())) {
-            Toast.makeText(this, "Introduce un LOTE con el formato: XXXX012345 (4 letras y 5 números).", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Introduce un LOTE con el formato: XXXX12345 (4 letras y 5 números).", Toast.LENGTH_SHORT).show();
             return false;
         } else if (sgbd.getFichaByLote(TVLote.getText().toString()) != null) {
             Toast.makeText(this, "Introduce un LOTE para la Ficha que no se encuentre ya en la base de datos.", Toast.LENGTH_SHORT).show();
@@ -445,7 +447,7 @@ public class NuevaFicha extends AppCompatActivity {
                     Toast.makeText(this, "Introduce un LOTE para la Ficha que no se encuentre ya en la base de datos.", Toast.LENGTH_SHORT).show();
                     comprobaciones=false;
                 }
-                else if (vacioOnulo(TVComKg.getText().toString())) {
+                else if (vacioOnulo(TVComKg.getText().toString())  || Double.parseDouble(TVComKg.getText().toString()) <= 0.0) {
                     try {
                         if (Double.parseDouble(TVComKg.getText().toString()) <= 0.0) {
                             throw new NumberFormatException();
@@ -455,6 +457,7 @@ public class NuevaFicha extends AppCompatActivity {
                         comprobaciones=false;
                     }
                 }
+
                 else
                 {
                     ContentValues cv2 = new ContentValues();

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidProjects-GOMAR_sanidad.iml" filepath="$PROJECT_DIR$/AndroidProjects-GOMAR_sanidad.iml" group="GOMAR_sanidad" />
       <module fileurl="file://$PROJECT_DIR$/GOMAR_sanidad.iml" filepath="$PROJECT_DIR$/GOMAR_sanidad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/GOMAR_sanidad-app.iml" filepath="$PROJECT_DIR$/app/GOMAR_sanidad-app.iml" group="GOMAR_sanidad/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
