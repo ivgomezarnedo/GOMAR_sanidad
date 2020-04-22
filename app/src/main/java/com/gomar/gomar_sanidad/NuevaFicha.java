@@ -289,7 +289,7 @@ public class NuevaFicha extends AppCompatActivity {
         auto_lote.setHint("Introduce el lote del componente "+componentes);
         AutoCompleteTextView auto_peso = new AutoCompleteTextView(this);
         auto_peso.setTag("Peso"+componentes);
-        auto_peso.setInputType(InputType.TYPE_CLASS_NUMBER);
+        auto_peso.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
         auto_peso.setHint("Introduce el peso del componente "+componentes);
 
         textViewComp.setLayoutParams(LayoutParamsview);
